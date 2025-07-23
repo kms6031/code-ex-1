@@ -10,7 +10,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: #ffffff;
+    color: gray;
 }
 
 .inner {
@@ -24,21 +24,24 @@ section {
     position: relative;
     z-index: 0;
     height: 100vh;
-    background-color: lightgreen;
+    background-color: aqua;
 }
-section h2{
+
+section h2 {
     font-size: 120px;
 }
-section p{
+
+section p {
     font-size: 17px;
-    padding:30px 0 50px
+    padding: 30px 0 50px;
 }
-a.btn{
-    background-color: #000;
+
+a.btn {
+    background-color: #000000;
     display: inline-block;
     padding: 10px;
     font-size: 22px;
-    border-radius: 100px;
+    border-radius: 21px;
     color: #ffffff;
 }
 
@@ -64,71 +67,142 @@ nav ul {
     display: flex;
     gap: 42px;
 }
-nav ul a{
+
+nav ul a {
     color: #ffffff;
     font-size: 18px;
 }
 
-#s01{
+#s01 {
+    height: 100vh;
     background: url(../img/pexels-philippedonn-1257860.jpg) no-repeat center/cover;
 }
-#s01 .inner{
+
+#s01 .inner {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-#s01 .t-wrap > *{
+
+#s01 .t-wrap>* {
     color: #ffffff;
 }
+
 #s02 {
-  background-color: #f0f0f0; /* 연회색 배경 */
-  padding: 100px 20px;
+    height: 100vh;
+    padding: 200px 0;
+    background: url(../img/pexels-hyo-jeong-han-1697422348-27977781.jpg) no-repeat center/cover;
+}
+
+#s02 .t-wrap {
+    position: relative;
+    display: inline-block;
+}
+
+#s02 .t-wrap h2,
+#s02 .t-wrap p {
+    position: relative;
+}
+
+#s02 .t-wrap::before {
+    display: block;
+    content: "";
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .s02-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
 }
 
 .s02-list li {
-  width: 200px;             
-  height: 200px;
-  background: lightgray;
-  padding: 10px;
-  border-radius: 10px;
-  box-sizing: border-box;
-  
+    width: 260px;
+    height: 218px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.s02-list li:hover {
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+.s02-list li p {
+    padding-top: 20px;
+    padding-bottom: 0;
 }
 
-.s02-list h3 {
-  font-size: 20px;
-  color: #333;
-  margin-bottom: 10px;
+#s03 {
+    height: 100vh;
+    padding: 200px 0;
+
 }
 
-.s02-list p {
-  font-size: 14px;
-  color: #555;
+#s03 .inner {
+    max-width: none;
+    display: flex;
 }
-#s02{
+
+#s03 .t-wrap,
+#s03 .img-wrap {
+    width: 50%;
+}
+
+#s03 .t-wrap {
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#s03 .img-wrap {
+    height: 100%;
     background: url(../img/pexels-hyo-jeong-han-1697422348-27977781.jpg) no-repeat center/cover;
 }
-.section-title {
-  font-size: 100px;
-  font-weight: 900;
-  background: linear-gradient(to right, #fcae88, #f16a70); /* 그라데이션 색상 */
-  -webkit-background-clip: text; /* 글자에만 배경 적용 */
-  -webkit-text-fill-color: transparent; /* 투명 글자 */
-  display: inline-block; /* 배경이 글자만큼만 차지하도록 */
+
+#s04 {
+    padding: 200px 0;
 }
 
+#s04 .t-wrap {
+    position: relative;
+}
+
+#s04 .t-wrap a.btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    /* margin-top: -24px; */
+    transform: translateY(-50%);
+}
+
+.s04-list{
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    text-align: center;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.s04-list li{
+    height: 350px;
+    background-color: #dbdbdb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.s04-list li:nth-child(even){
+    margin-top: 60px;
+}
